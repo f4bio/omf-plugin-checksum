@@ -128,3 +128,6 @@ pip-delete-this-directory.txt
 ###### ################
 ##	project related
 ### #############
+*.sha3
+*.sha1
+*.md5
