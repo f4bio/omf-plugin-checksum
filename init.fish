@@ -1,5 +1,7 @@
-set RHASH_VERSION (rhashxx --version 2>/dev/null)
-
-if test -z "$RHASH_VERSION"
-    echo "Please install rhash first. See https://github.com/rhash/RHash"
+# according to: https://fishshell.com/docs/current/faq.html
+if rhash
+    set -gx RHASH_VERSION (rhash --version)
+else
+     echo "Please install rhash first. See https://github.com/rhash/RHash"
+     exit 1
 end
