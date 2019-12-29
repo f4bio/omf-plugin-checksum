@@ -1,5 +1,5 @@
 # according to: https://fishshell.com/docs/current/faq.html
-if rhash
+if (rhash --version)
     set -gx RHASH_VERSION (rhash --version)
 else
      echo "Please install rhash first. See https://github.com/rhash/RHash"
